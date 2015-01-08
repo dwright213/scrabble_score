@@ -36,17 +36,16 @@ class String
       letter_values.store(letter, 10)
     end
 
-    #fetches word's value from letter_values hash
     word_letters.each() do |letter|
       word_score += (letter_values.fetch(letter))
     end
-    #return word's value
+
     word_score
 
   end
 end
 
-#puts("rocky".scrabble_score)
+
  class String
    define_method(:scrabble_cook) do
      raw_input = self.split('')
